@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"vite\" \"cd src/server && ts-node server.ts\"",
     "build": "tsc --jsx react-jsx",
-    "start": "cd src/server && node dist/server.js",
+    "start": "npm run build && npm run serve",
     "serve": "cd src/server && npm run build && npm start"
   },
   "dependencies": {
