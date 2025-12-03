@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",
-    "lib": ["ES2020"],
+    "target": "ES2020",                // Keep ES2020 for modern JavaScript
+    "module": "Node16",                 // Change module to Node16 for compatibility with node16 resolution
+    "moduleResolution": "node16",       // Use node16 for modern module resolution
+    "lib": ["ES2020", "DOM"],           // Add "DOM" to lib for browser APIs
     "outDir": "./dist",
-    "rootDir": "./",
+    "rootDir": "./src",                 // Ensure source files are in the "src" folder
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "jsx": "react-jsx"                  // Add jsx for React JSX transformation
   },
-  "include": ["**/*"],
+  "include": ["src/**/*"],               // Assuming your source files are in the "src" folder
   "exclude": ["node_modules", "dist"]
 }
