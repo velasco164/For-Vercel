@@ -3,13 +3,14 @@
   "builds": [
     {
       "src": "src/server/**/*.ts",
-      "use": "@vercel/static-build"
+     
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/questions",
-      "dest": "/api/questions.ts"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
