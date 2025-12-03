@@ -22,7 +22,7 @@ const pgPool = new Pool({
 });
 
 // MongoDB URI from environment variable
-const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://Vercel-Admin-atlas-blue-elephant:awdawfgwg@atlas-blue-elephant.s08ch7i.mongodb.net/?retryWrites=true&w=majority';
+const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://Vercel-Admin-atlas-blue-elephant:vEYA1T7r5bWOcEG0@atlas-blue-elephant.s08ch7i.mongodb.net/?retryWrites=true&w=majority';
 
 // Create MongoClient instance
 const mongoClient = new MongoClient(mongoURI, {
